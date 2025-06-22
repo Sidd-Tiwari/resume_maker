@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+</head>
+<body>
+    <h2>Fill in Your Information</h2>
+    <form action="generate.php" method="POST" enctype="multipart/form-data">
+        <label for="full_name">Full Name:</label><br>
+        <input type="text" id="full_name" name="full_name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="text" id="phone" name="phone"><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address"></textarea><br><br>
+
+        <label for="summary">Summary:</label><br>
+        <textarea id="summary" name="summary"></textarea><br><br>
+
+        <label for="education">Education (Enter each entry on a new line):</label><br>
+        <textarea id="education" name="education"></textarea><br><br>
+
+        <label for="experience">Experience (Enter each entry on a new line):</label><br>
+        <textarea id="experience" name="experience"></textarea><br><br>
+
+        <label for="skills">Skills (Enter each skill on a new line):</label><br>
+        <textarea id="skills" name="skills"></textarea><br><br>
+
+        <label for="selected_template">Select Resume Template:</label><br>
+        <select id="selected_template" name="selected_template">
+            <option value="template1">Template 1</option>
+            <option value="template2">Template 2</option>
+            <option value="template3">Template 3</option>
+        </select><br><br>
+
+        <input type="submit" value="Generate Resume">
+    </form>
+</body>
+</html>
